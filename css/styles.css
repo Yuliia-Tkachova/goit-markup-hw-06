@@ -1,57 +1,113 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #434455;
-    background-color: #ffffff;
-  }
-  .link {
-    text-decoration: none;
-  }
-  .list {
-    list-style-type: none;
-  }
-  button {
-    cursor: pointer;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  ul,
-  ol {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-  }
+  font-family: 'Roboto', sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style-type: none;
+}
+button {
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+/*-------COMMON STYLES-----*/
+@media screen and (min-width:480px) {
   .container {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  img {
-    display: block;
-  }
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-  /*-------COMMON STYLES-----*/
-@media screen and (min-width: 480px) {
-    .container {
-    width: 340px;
+    width: 352px;
     margin-left: auto;
     margin-right: auto;
-    }
- }
+  }
+}
+/*
+@media screen and (min-width: 768px) {
+  .container {
+    width: 788px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+}
+
+/*header styles*/
+.menu {
+  display: none;
+}
+.contact-list {
+  display: none;
+}
+.logotype {
+ 
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+
+}
+.logotype:hover,
+.logotype:focus {
+  color: #404bbf;
+}
+.logo-span {
+  color: #2e2f42;
+}
+.mobile-open-btn {
+border:none;
+background-color: transparent;
+padding: 0;
+line-height: 0;
+}
+.mobile-open-btn-icon {
+  color: #2f2f37;
+}
+.cont-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
